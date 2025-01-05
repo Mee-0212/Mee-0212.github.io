@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แจ้งผลการเรียน</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(90deg, rgba(25, 136, 247, 1) 0%, rgba(247, 25, 136, 1) 100%);
+            text-align: center;
+        }
+
+        .logo {
+            margin-top: 150px;
+        }
+
+        .logo img {
+            width: 150px;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #000000;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #000000;
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 14px;
+            color: #999;
+        }
+
+        .navbar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #ffffff;
+            border-top: 1px solid #00000000;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #000000;
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .navbar a:hover {
+            color: #6b2828;
+        }
+
+        .navbar img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .form-container {
+            margin: 20px auto;
+            width: 70%;
+            max-width: 500px;
+            background: #ffffff9a;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+            text-align: left;
+        }
+
+        .form-container label {
+            display: block;
+            margin: 6px 0 0px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .form-container input, .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <img src="logo Bj.jpg" alt="โรงเรียนเบญจมราชูทิศ ราชบุรี">
+    </div>
+    <div class="title">แจ้งผลการเรียน</div>
+    <div class="subtitle">โรงเรียนเบญจมราชูทิศ ราชบุรี</div>
+
+    <div class="form-container">
+        <form>
+            <label for="semester">ภาคเรียนที่*</label>
+            <input type="text" id="semester" name="semester" required>
+
+            <label for="subject-name">ชื่อวิชา*</label>
+            <input type="text" id="subject-name" name="subject-name" required>
+
+            <label for="subject-code">รหัสวิชา*</label>
+            <input type="text" id="subject-code" name="subject-code" required>
+
+            <label for="unit-count">จำนวนหน่วยการเรียน*</label>
+            <input type="text" id="unit-count" name="unit-count" required>
+
+            <label for="student-info">เลขประจำตัว ชื่อ-สกุล*</label>
+            <input type="text" id="student-info" name="student-info" required>
+
+            <label for="original-result">ผลการเรียนเดิม*</label>
+            <input type="text" id="original-result" name="original-result" required>
+
+            <label for="final-result">ผลการสอบแก้ตัว*</label>
+            <input type="text" id="final-result" name="final-result" required>
+
+            <button type="submit">Save</button>
+        </form>
+    </div>
+
+    <div class="navbar">
+        <a href="index.html">
+            <img src="home.jpg" alt="Home">
+            <span>หน้าหลัก</span>
+        </a>
+        <a href="#">
+            <img src="Studen.jpg" alt="รายชื่อนักเรียน">
+            <span>รายชื่อนักเรียน</span>
+        </a>
+        <a href="http://127.0.0.1:5502/grade.html">
+            <img src="grade.jpg" alt="แจ้งผลการเรียน">
+            <span>แจ้งผลการเรียน</span>
+        </a>
+        <a href="https://www.ben.ac.th/main/" class="button">
+            <img src="school.jpg" alt="โรงเรียน">
+            <span>โรงเรียน</span>
+        </a>
+        <a href="https://web.facebook.com/benjama.bj" class="button">
+            <img src="facebook.jpg" alt="เพจโรงเรียน">
+            <span>เพจโรงเรียน</span>
+        </a>
+    </div>
+</body>
+</html>
